@@ -1,0 +1,33 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Office\Outlook\Addins\OutlookFolderIcons.Connect]
+"FriendlyName"="Outlook Folder Icons"
+"Description"="Outlook Folder Icons Add-in"
+"LoadBehavior"=dword:00000003
+"CommandLineSafe"=dword:00000000
+
+;------------------------------------------------
+[HKEY_CURRENT_USER\Software\Classes\OutlookFolderIcons.Connect]
+
+[HKEY_CURRENT_USER\Software\Classes\OutlookFolderIcons.Connect\CLSID]
+@="{AC92B228-C86E-4500-B1DE-D6E78D4CD094}"
+
+;------------------------------------------------
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{AC92B228-C86E-4500-B1DE-D6E78D4CD094}]
+@="OutlookFolderIcons.Connect"
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{AC92B228-C86E-4500-B1DE-D6E78D4CD094}\InProcServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{AC92B228-C86E-4500-B1DE-D6E78D4CD094}\InProcServer32\1.0.0.0]
+"Assembly"="OutlookFolderIcons, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c2bccb689fe74e7c"
+"Class"="OutlookFolderIcons.Connect"
+"CodeBase"="file:///D:/T800/Visual Studio 2008/Projects/OutlookFolderIcons/OutlookFolderIcons/bin/Debug/OutlookFolderIcons.dll"
+"RuntimeVersion"="v4.0.30319.42000"
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{AC92B228-C86E-4500-B1DE-D6E78D4CD094}\ProgId]
+@="OutlookFolderIcons.Connect"
+
+[HKEY_CURRENT_USER\Software\Classes\CLSID\{AC92B228-C86E-4500-B1DE-D6E78D4CD094}\Version]
+@="1.0.0.0"

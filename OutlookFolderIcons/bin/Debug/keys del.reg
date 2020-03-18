@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_CURRENT_USER\Software\Microsoft\Office\Outlook\Addins\OutlookFolderIcons.Connect]
+
+;TODO: da li mogu use normal i wow64 pa se loadaju odgovarajuæi bitness?
+;TODO: VM test sa office x64
+
+[-HKEY_CURRENT_USER\Software\Classes\OutlookFolderIcons.Connect]
+[-HKEY_CURRENT_USER\Software\Classes\CLSID\{AC92B228-C86E-4500-B1DE-D6E78D4CD094}]
+[-HKEY_CURRENT_USER\Software\Classes\Wow6432Node\CLSID\{AC92B228-C86E-4500-B1DE-D6E78D4CD094}]

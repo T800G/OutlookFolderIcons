@@ -1,0 +1,74 @@
+<customUI onLoad="OnFolderIconsRibbonLoad" xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+	<ribbon>
+		<tabs>
+			<tab idMso="TabFolder">
+				<group id="folderIcons.Ribbon.MainGroup"
+					label="Folder Icon">
+					<gallery id="folderIcons.Explorer.DynamicGallery"
+						size="large"
+					    imageMso="AnimationGallery"
+						label="Folder icon"
+					    supertip="Set or remove custom icon for current folder"
+					    getItemCount="GalleryGetItemCount"
+					    getItemLabel="GalleryGetItemLabel"
+						getItemImage="GalleryGetItemImage"
+						onAction="GalleryItemClick"   
+					    itemWidth="16"
+					    itemHeight="16"
+						showItemLabel="true">
+						<button id="folderIcons.Explorer.Button.SetIcon"
+						    getVisible="GetControlVisible"
+							onAction="ActionButtonClick"
+							imageMso="FileOpen" 
+							label="Select icon..."
+							supertip="Select image for folder icon"/>
+						<button id="folderIcons.Explorer.Button.RemoveIcon"
+						    getVisible="GetControlVisible"
+							onAction="ActionButtonClick"
+							imageMso="FileClose" 
+							label="Restore default icon"
+							supertip="Restore default folder icon"/>
+						<button id="folderIcons.Explorer.CmdUnavailable"
+						    getVisible="GetControlVisible"
+							imageMso="DeclineInvitation"
+							label="Icon can not be changed for default or special folder"
+						    supertip="Select different folder"
+							description="Select different folder"/>
+						<button id="folderIcons.Explorer.Button.OpenLibraryFolder"
+							onAction="ActionButtonClick"
+							imageMso="FileOpen" 
+							label="Open image library folder"
+							supertip="Open image library folder"/>
+						<button id="folderIcons.Explorer.Button.Help"
+							getVisible="GetControlVisible"
+						    onAction="ActionButtonClick"
+							imageMso="Help" 
+							label="Help"
+							supertip="Open Folder Icons help file"/>
+					</gallery>
+				</group>
+			</tab>
+		</tabs>
+	</ribbon>
+	<contextMenus>
+		<contextMenu idMso="ContextMenuFolder">
+			<gallery id="folderIcons.ContextMenu.DynamicGallery"
+				getVisible="GetControlVisible"
+				imageMso="AnimationGallery"
+				label="Folder icon"
+			    getItemCount="GalleryGetItemCount"
+			    getItemLabel="GalleryGetItemLabel"
+			    getItemImage="GalleryGetItemImage"
+				onAction="GalleryItemClick"
+			    itemWidth="16"
+			    itemHeight="16"
+				showItemLabel="false">
+				<button id="folderIcons.ContextMenu.Button.RemoveIcon"
+				    getVisible="GetControlVisible"
+					onAction="ActionButtonClick"
+				    label="Restore default icon"
+					imageMso="FileClose" />
+			</gallery>
+		</contextMenu>
+	</contextMenus>
+</customUI>
